@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        function multiply(num1, num2) {
+            let result = num1 * num2;
+            return result;
+        }
+
+        // Llamada a la función multiply con diferentes conjuntos de argumentos
+        let result1 = multiply(4, 7);
+        let result2 = multiply(20, 20);
+        let result3 = multiply(0.5, 3);
+
+        // Mostrar los resultados en el elemento 'output'
+        let outputElement = document.getElementById('output');
+        outputElement.innerHTML = 'Resultado 1: ' + result1 + '<br>';
+        outputElement.innerHTML += 'Resultado 2: ' + result2 + '<br>';
+        outputElement.innerHTML += 'Resultado 3: ' + result3 + '<br>';
+    </script>
+</body>
+</html>
